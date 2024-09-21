@@ -4,8 +4,9 @@ public class Alien {
 
     private int age;
     private Computer comp;
+
     public Alien() {
-        System.out.println("Alien object created");
+//        System.out.println("Alien object created");
     }
 
 

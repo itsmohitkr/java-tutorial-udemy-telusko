@@ -7,16 +7,14 @@
     <!--beans are the object which are managed by the spring framework-->
     <!-- bean definitions here -->
 
-    <bean id="alien1" class="online.devplanet.Alien">
-    <!--Constructor Injection: Use the <constructor-arg> tag in spring.xml to inject
-         values via the constructor.
-     -->
-
-        <constructor-arg index="0" value="23"/>
-        <constructor-arg index="1" ref="lap1"/>
+    <bean id="alien1" class="online.devplanet.Alien" autowire="byName">
+        <property name="comp" ref="comp2"/>
     </bean>
 
-    <bean id="lap1" class="online.devplanet.Laptop">
+    <bean id="comp" class="online.devplanet.Laptop">
+    </bean>
+
+    <bean id="comp2" class="online.devplanet.Desktop">
     </bean>
 
 </beans>
