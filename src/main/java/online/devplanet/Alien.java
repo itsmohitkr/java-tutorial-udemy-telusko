@@ -10,7 +10,6 @@ public class Alien {
     }
 
 
-
     public int getAge() {
         return age;
     }

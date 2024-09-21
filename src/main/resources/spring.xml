@@ -8,14 +8,13 @@
     <!-- bean definitions here -->
 
     <bean id="alien1" class="online.devplanet.Alien" autowire="byType">
+        <property name="comp">
+<!--            The inner bean (comp1 of type Laptop) is unique to the alien1 bean and cannot be referenced elsewhere.-->
+            <bean id="comp1" class="online.devplanet.Laptop" primary="true">
+            </bean>
+        </property>
     </bean>
 
-    <!--if there is any confusion it will create an object of laptop-->
-    <bean id="comp" class="online.devplanet.Laptop" primary="true">
-    </bean>
-
-    <bean class="online.devplanet.Desktop" lazy-init="true">
-    </bean>
 
 </beans>
 
