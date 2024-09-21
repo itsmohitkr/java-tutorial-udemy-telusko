@@ -7,7 +7,7 @@
     <!--beans are the object which are managed by the spring framework-->
     <!-- bean definitions here -->
 
-    <bean id="alien1" class="online.devplanet.Alien">
+    <bean id="alien1" class="online.devplanet.Alien" scope="prototype">
     </bean>
 
 <!--    <bean id="alien2" class="online.devplanet.Alien">-->
