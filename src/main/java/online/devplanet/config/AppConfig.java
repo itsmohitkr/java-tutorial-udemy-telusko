@@ -7,7 +7,8 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class AppConfig {
 
-    @Bean // use bean if you want spring to create object of desktop.
+//  @Bean(name = "comp2") // use this if you want to give some name to bean.
+    @Bean // the default bean name is the name of the method name.
     public Desktop desktop(){
         return new Desktop();
     }
