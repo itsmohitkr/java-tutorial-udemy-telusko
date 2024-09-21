@@ -3,9 +3,15 @@ package online.devplanet;
 public class Alien {
 
     private int age;
-    private Laptop lap = new Laptop();
+    private Laptop lap;
     public Alien() {
         System.out.println("Alien object created");
+    }
+
+    public Alien(int age, Laptop lap) {
+        System.out.println("Alien para constructor called");
+        this.age = age;
+        this.lap = lap;
     }
 
     public int getAge() {
