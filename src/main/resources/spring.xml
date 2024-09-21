@@ -14,7 +14,12 @@
     <bean id="comp" class="online.devplanet.Laptop" primary="true">
     </bean>
 
-    <bean id="comp2" class="online.devplanet.Desktop">
+<!--    the attribute lazy-init="true" is used to configure a bean to be
+        lazily initialized. This means that the bean will not be created and
+        initialized during the application startup (i.e., when the Spring container starts)
+        but only when it is first requested or needed in the application.
+-->
+    <bean id="comp2" class="online.devplanet.Desktop" lazy-init="true">
     </bean>
 
 </beans>

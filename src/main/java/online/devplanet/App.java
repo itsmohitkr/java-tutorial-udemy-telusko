@@ -11,5 +11,6 @@ public class App
         Alien obj1 = (Alien) context.getBean("alien1");
 
         obj1.code();
+        Desktop obj2 = (Desktop) context.getBean("comp2");
     }
 }

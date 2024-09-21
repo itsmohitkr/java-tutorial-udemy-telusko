@@ -6,7 +6,7 @@ public class Alien {
     private Computer comp;
 
     public Alien() {
-//        System.out.println("Alien object created");
+        System.out.println("Alien object created");
     }
 
 
