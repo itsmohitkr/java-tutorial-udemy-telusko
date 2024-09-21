@@ -7,11 +7,11 @@
     <!--beans are the object which are managed by the spring framework-->
     <!-- bean definitions here -->
 
-    <bean id="alien1" class="online.devplanet.Alien" autowire="byName">
-        <property name="comp" ref="comp2"/>
+    <bean id="alien1" class="online.devplanet.Alien" autowire="byType">
     </bean>
 
-    <bean id="comp" class="online.devplanet.Laptop">
+    <!--if there is any confusion it will create an object of laptop-->
+    <bean id="comp" class="online.devplanet.Laptop" primary="true">
     </bean>
 
     <bean id="comp2" class="online.devplanet.Desktop">
