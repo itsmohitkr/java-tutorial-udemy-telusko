@@ -7,11 +7,10 @@
     <!--beans are the object which are managed by the spring framework-->
     <!-- bean definitions here -->
 
-    <bean id="alien1" class="online.devplanet.Alien" scope="prototype">
+    <bean id="alien1" class="online.devplanet.Alien">
+        <!-- Inject the value of 'age' property -->
+        <property name="age" value="22"/>
     </bean>
-
-<!--    <bean id="alien2" class="online.devplanet.Alien">-->
-<!--    </bean>-->
 
     <bean id="lap" class="online.devplanet.Laptop">
     </bean>
