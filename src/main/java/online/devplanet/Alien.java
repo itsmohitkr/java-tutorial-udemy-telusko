@@ -1,5 +1,8 @@
 package online.devplanet;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Alien {
 
     private int age;
