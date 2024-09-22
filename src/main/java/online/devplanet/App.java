@@ -9,11 +9,12 @@ public class App
     public static void main(String[] args)
     {
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
-        Desktop dt1 =  context.getBean(Desktop.class);
-        dt1.compile();
+        Alien obj =  context.getBean(Alien.class);
+//        obj.setAge(22); // don't set age from here.
+        System.out.println(obj.getAge());
+        obj.code();
 
-        Desktop dt2 =  context.getBean(Desktop.class);
-        dt2.compile();
+
 
     }
 }
