@@ -31,6 +31,7 @@ public class Alien {
         return comp;
     }
     @Autowired
+    @Qualifier("laptop") // this will have higher priority than @primary in Desktop
     public void setComp(Computer comp) {
         this.comp = comp;
     }
